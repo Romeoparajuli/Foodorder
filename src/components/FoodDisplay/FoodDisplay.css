@@ -1,0 +1,57 @@
+/* Container for food display */
+.food-display {
+    padding: 20px;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+/* Heading styling */
+.food-display h2 {
+    font-size: 2rem; /* Responsive font using rem */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid for displaying food items */
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Individual food item styling */
+.food-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Simplified box-shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effects for food items */
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .food-display {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .food-display h2 {
+        font-size: 1.5rem; /* Adjusted font size */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+    .food-display h2 {
+        font-size: 1.2rem; /* Further reduced font size */
+    }
+}
